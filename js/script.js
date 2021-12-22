@@ -35,13 +35,13 @@ const janken = tangan => {
 
     switch( jariKen ) {
         case 0:
-            ken.style.backgroundImage = "url(../images/ken-batu.png)";
+            ken.style.backgroundImage = "url('../images/ken-batu.png')";
             break;
         case 1:
-            ken.style.backgroundImage = "url(../images/ken-gunting.png)";
+            ken.style.backgroundImage = "url('../images/ken-gunting.png')";
             break;
         default:
-            ken.style.backgroundImage = "url(../images/ken-kertas.png)";
+            ken.style.backgroundImage = "url('../images/ken-kertas.png')";
             break;
     }
 
