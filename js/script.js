@@ -105,13 +105,34 @@ const result = who => {
 }
 
 batu.addEventListener('click', (e) => {
+    // mencegah adanya double-click
+    batu.classList.add('disabled');
+    batu.disabled = true;
     janken(0);
+    setTimeout(() => {
+        batu.classList.remove('disabled');
+        batu.disabled = false;
+    }, 2000);
 });
 
 gunting.addEventListener('click', (e) => {
+    // mencegah adanya double-click
+    gunting.classList.add('disabled');
+    gunting.disabled = true;
     janken(0);
+    setTimeout(() => {
+        gunting.classList.remove('disabled');
+        gunting.disabled = false;
+    }, 2000);
 });
 
 kertas.addEventListener('click', (e) => {
+    // mencegah adanya double-click
+    kertas.classList.add('disabled');
+    kertas.disabled = true;
     janken(0);
+    setTimeout(() => {
+        kertas.classList.remove('disabled');
+        kertas.disabled = false;
+    }, 2000);
 });
